@@ -6,7 +6,7 @@ include('./google/config.php');
 
 
 
-function convertirPrimeraLetraMayuscula($texto)
+function convertirPrimeraLetraMayusculaa($texto)
 {
     $textoMinusculas = strtolower($texto);
     $textoConvertido = ucwords($textoMinusculas);
