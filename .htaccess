@@ -1,0 +1,12 @@
+# Evita listado de carpetas
+Options -Indexes
+
+# Permitir acceso a imágenes, videos y documentos
+<FilesMatch "\.(jpg|jpeg|png|gif|svg|bmp|ico|webp|heic|mp4|webm|avi|mov|wmv|mp3|wav|ogv|ogg|pdf|doc|docx|xls|xlsx|zip|rar|tar|gz|ppt|pptx|csv)$">
+    Require all granted
+</FilesMatch>
+
+# Bloquear acceso a scripts que no necesitas
+<FilesMatch "\.(sh|as)$">
+    Require all denied
+</FilesMatch>
